@@ -15,11 +15,15 @@ body {
 /* HEADER */
 .site-header {
   display: flex;
-  justify-content: space-between;  /* pushes nav to right */
+  justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
   background: white;
   box-shadow: 0 2px 10px #ddd;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .logo-img {
   width: 150px;
@@ -628,4 +632,10 @@ body {
   .founder-image {
     justify-content: center;
   }
+}
+#about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
